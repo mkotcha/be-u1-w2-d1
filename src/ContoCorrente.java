@@ -17,10 +17,8 @@ public class ContoCorrente {
             saldo = saldo - x;
         else
             saldo = saldo - x - 0.50;
-
-        if (saldo < 0) throw new BancaException("il conto è in rosso");
-
         nMovimenti++;
+        if (saldo < 0) throw new BancaException("il conto è in rosso");
     }
 
     double restituisciSaldo() {
