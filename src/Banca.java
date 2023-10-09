@@ -12,7 +12,7 @@ public class Banca {
             System.out.println("Saldo conto: " + conto1.restituisciSaldo());
         } catch (BancaException e) {
             System.out.println("Errore durante il prelievo: " + e);
-            e.printStackTrace();
+//            e.printStackTrace();
         }
 
         ContoOnLine conto2 = new ContoOnLine("Rossi Luigi", 50350.0, 1500);
@@ -26,7 +26,7 @@ public class Banca {
 
         } catch (BancaException e) {
             System.out.println("Errore durante il prelievo: " + e);
-            e.printStackTrace();
+//            e.printStackTrace();
         }
     }
 }

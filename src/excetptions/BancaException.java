@@ -10,8 +10,6 @@ public class BancaException extends Exception {
 
     @Override
     public String toString() {
-        return "BancaException{" +
-                "message='" + message + '\'' +
-                '}';
+        return message;
     }
 }
